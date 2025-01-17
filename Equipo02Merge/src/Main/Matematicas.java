@@ -17,4 +17,7 @@ public class Matematicas {
 		System.out.println("Proyecto del equipo 2");
 	}
 
+	public static boolean esDivisiblePorCinco(int numero) {
+        return numero % 5 == 0;
+    }
 }
