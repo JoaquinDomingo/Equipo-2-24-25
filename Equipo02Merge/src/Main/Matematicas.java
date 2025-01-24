@@ -4,10 +4,18 @@ import java.util.Scanner;
 
 
 public class Matematicas {
+
+	public static boolean esPar(int numero) {
+		return numero % 2 == 0;
+	}
 	
 	public static boolean esDivisiblePorTres(int numero) {
 		return numero % 3 == 0;
 	}
+
+	public static boolean esDivisiblePorCinco(int numero) {
+        return numero % 5 == 0;
+    }
 
 	/**
 	 * @param args
@@ -35,18 +43,10 @@ public class Matematicas {
 						break;
 					case 2: System.out.println("Es divisible por tres?" + esDivisiblePorTres(numero));
 						break;
-					case 3: System.out.println("Es divisible por Cinco?" + esDivisiblePorCinco(numeero));
+					case 3: System.out.println("Es divisible por Cinco?" + esDivisiblePorCinco(numero));
 						break;	
 				}
 			}
 		} while (opcion != 4);
-		
-		public static boolean esPar(int numero) {
-			return numero%2 == 0;
-		}
 	}
-
-	public static boolean esDivisiblePorCinco(int numero) {
-        return numero % 5 == 0;
-    }
 }
