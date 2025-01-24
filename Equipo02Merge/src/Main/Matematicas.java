@@ -47,4 +47,7 @@ public class Matematicas {
 		}
 	}
 
+	public static boolean esDivisiblePorCinco(int numero) {
+        return numero % 5 == 0;
+    }
 }
